@@ -2,15 +2,14 @@
 layout: about
 title: about
 permalink: /
-subtitle: <p>Augmenting how we perceive the world<p>
+subtitle: <strong>Augmenting how we perceive the world</strong>
 
 profile:
   align: right
   image: nahyunlee.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>leadtheworld@g.skku.edu</p>
-    <p>Now I'm in Barcelona, Spain!</p>
+    <p>🇪🇸 Now I'm in Barcelona, Spain!</p>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
@@ -26,8 +25,6 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](https://www.reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+I am a third-year undergraduate researcher at `Sungkyunkwan University`, pursuing a triple major in Mechanical Engineering, Software Engineering, and a self-designed major in Human–Computer Interaction (HCI). My research explores the intersection of `cognitive augmentation`, `sensing`, and `HCI`. I aim to augment human perception to make the world more interpretable and intuitive in increasingly information-rich environments.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
-
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+Currently a research intern at KAIST, I am advised by [Ian Oakley](https://scholar.google.com/citations?user=eth0NcUAAAAJ&hl=ko&oi=ao) in [the Wearable Interaction Technology Lab](https://wit.kaist.ac.kr/). Previously, I conducted research with the Interaction Independence Study Group at the Stanford Center at the Incheon Global Campus under the supervision of Hoseok Jung (2024–2025). I am a recipient of the Presidential Science Scholarship since 2025.
