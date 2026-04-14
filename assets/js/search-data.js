@@ -3,8 +3,8 @@ const ninja = document.querySelector('ninja-keys');
 
 // add the home and posts menu items
 ninja.data = [{
-    id: "nav-about",
-    title: "about",
+    id: "nav-",
+    title: "",
     section: "Navigation",
     handler: () => {
       window.location.href = "/";
@@ -384,18 +384,10 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
-            },},{id: "news-my-first-poster-is-accepted-in-chi-2026",
-          title: 'My first Poster is accepted in CHI 2026!',
+            },},{id: "news-my-first-poster-is-this-enough-to-decide-facilitating-informed-investment-decisions-by-visualizing-missing-evidence-https-doi-org-10-1145-3772363-3798348-has-been-accepted-to-chi-2026-acceptance-rate-38-4-special-thanks-to-hyeon-jeon-https-www-hyeonjeon-com",
+          title: 'My first poster, [Is This Enough to Decide? Facilitating Informed Investment Decisions by...',
           description: "",
-          section: "News",},{id: "news-a-simple-inline-announcement",
-          title: 'A simple inline announcement.',
-          description: "",
-          section: "News",},{id: "news-a-long-announcement-with-details",
-          title: 'A long announcement with details',
-          description: "",
-          section: "News",handler: () => {
-              window.location.href = "/news/announcement_2/";
-            },},{id: "projects-project-1",
+          section: "News",},{id: "projects-project-1",
           title: 'project 1',
           description: "with background image",
           section: "Projects",handler: () => {
