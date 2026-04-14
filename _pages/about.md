@@ -12,7 +12,7 @@ profile:
     <p>Now I'm in Barcelona, Spain!</p>
 
 selected_papers: false # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
+social: false # includes social icons at the bottom of the page
 
 announcements:
   enabled: true # includes a list of news items
@@ -30,7 +30,13 @@ I am a third-year undergraduate researcher at `Sungkyunkwan University`, pursuin
 Currently a research intern at KAIST, I am advised by [Ian Oakley](https://scholar.google.com/citations?user=eth0NcUAAAAJ&hl=ko&oi=ao) in [the Wearable Interaction Technology Lab](https://wit.kaist.ac.kr/). Previously, I conducted research with the Interaction Independence Study Group at the Stanford Center at the Incheon Global Campus under the supervision of Hoseok Jung (2024–2025). I am a recipient of the Presidential Science Scholarship since 2025.
 
 <p>
-  <a class="btn btn-primary" href="{{ '/assets/pdf/NahyunLee_CV_260414.pdf' | relative_url }}" download>
-    📄 Download CV
+  <a class="btn btn-outline-primary" href="{{ '/assets/pdf/NahyunLee_CV.pdf' | relative_url }}" download>
+    <i class="fas fa-file-pdf"></i> Download CV
+  </a>
+  <a class="btn btn-outline-primary" href="www.linkedin.com/in/leadtheworld" target="_blank">
+    <i class="fab fa-linkedin"></i> LinkedIn
+  </a>
+  <a class="btn btn-outline-primary" href="https://scholar.google.com/citations?hl=ko&view_op=list_works&gmla=AEk_c1speIk_T40O7IRLEmzPbVhstG8zGZGCmWbNTfKX0NfZ4SMB3PYag4NV_dwxSh5wUbX1r2msdUGS_KJ23pyA633F9tq3aKj7B5W4fkZ7mYR4uA&user=11pN9C4AAAAJ" target="_blank">
+    <i class="ai ai-google-scholar"></i> Google Scholar
   </a>
 </p>
