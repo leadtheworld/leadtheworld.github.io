@@ -9,7 +9,7 @@ profile:
   image: nahyunlee.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>Now I'm in Barcelona, Spain!</p>
+    <p>Now I'm at KAIST in Daejeon, Korea!</p>
 
 selected_papers: false # includes a list of papers marked as "selected={true}"
 social: false # includes social icons at the bottom of the page
