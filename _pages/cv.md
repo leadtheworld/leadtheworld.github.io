@@ -11,12 +11,12 @@ toc:
 ---
 
 {% if page.cv_pdf %}
-  {% assign cv_pdf_url = page.cv_pdf %}
-  {% if page.cv_pdf contains '://' %}
-    {% assign cv_pdf_url = page.cv_pdf %}
-  {% else %}
-    {% assign cv_pdf_url = page.cv_pdf | relative_url %}
-  {% endif %}
+{% assign cv_pdf_url = page.cv_pdf %}
+{% if page.cv_pdf contains '://' %}
+{% assign cv_pdf_url = page.cv_pdf %}
+{% else %}
+{% assign cv_pdf_url = page.cv_pdf | relative_url %}
+{% endif %}
 
   <div style="margin-bottom: 1.5rem;">
     <p>
