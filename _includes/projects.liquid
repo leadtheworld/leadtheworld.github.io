@@ -17,7 +17,13 @@
         {% if project.paper or project.doi or project.video or project.website or project.github %}
           <div class="mb-2">
             {% if project.paper %}
-              <a href="{% if project.paper contains '://' %}{{ project.paper }}{% else %}{{ project.paper | relative_url }}{% endif %}" class="btn btn-outline-secondary btn-sm mr-1 mb-1" target="_blank" rel="noopener noreferrer">Paper</a>
+              <a
+                href="{% if project.paper contains '://' %}{{ project.paper }}{% else %}{{ project.paper | relative_url }}{% endif %}"
+                class="btn btn-outline-secondary btn-sm mr-1 mb-1"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Paper</a
+              >
             {% endif %}
             {% if project.doi %}
               {% assign doi_url = project.doi %}
@@ -27,10 +33,22 @@
               <a href="{{ doi_url }}" class="btn btn-outline-secondary btn-sm mr-1 mb-1" target="_blank" rel="noopener noreferrer">DOI</a>
             {% endif %}
             {% if project.video %}
-              <a href="{% if project.video contains '://' %}{{ project.video }}{% else %}{{ project.video | relative_url }}{% endif %}" class="btn btn-outline-secondary btn-sm mr-1 mb-1" target="_blank" rel="noopener noreferrer">Video</a>
+              <a
+                href="{% if project.video contains '://' %}{{ project.video }}{% else %}{{ project.video | relative_url }}{% endif %}"
+                class="btn btn-outline-secondary btn-sm mr-1 mb-1"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Video</a
+              >
             {% endif %}
             {% if project.website %}
-              <a href="{% if project.website contains '://' %}{{ project.website }}{% else %}{{ project.website | relative_url }}{% endif %}" class="btn btn-outline-secondary btn-sm mr-1 mb-1" target="_blank" rel="noopener noreferrer">Website</a>
+              <a
+                href="{% if project.website contains '://' %}{{ project.website }}{% else %}{{ project.website | relative_url }}{% endif %}"
+                class="btn btn-outline-secondary btn-sm mr-1 mb-1"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Website</a
+              >
             {% endif %}
           </div>
         {% endif %}
