@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <span style="font-size:2em; font-weight:660;">Augmenting how we perceive the world</span>
+subtitle: <span style="font-size:2em; font-weight:660; color:#8a8a8a; font-style:italic;">Augmenting how we perceive the world</span>
 
 profile:
   align: right
@@ -29,7 +29,7 @@ I am a third-year undergraduate researcher at `Sungkyunkwan University`, pursuin
 
 Currently a research intern at KAIST, I am advised by [Ian Oakley](https://scholar.google.com/citations?user=eth0NcUAAAAJ&hl=ko&oi=ao) in [the Wearable Interaction Technology Lab](https://wit.kaist.ac.kr/). Previously, I conducted research with the Interaction Independence Study Group at the Stanford Center at the Incheon Global Campus under the supervision of Hoseok Jung (2024–2025). I am a recipient of the Presidential Science Scholarship since 2025.
 
-<div style="display: flex; flex-wrap: nowrap; gap: 0.75rem; margin-top: 1rem; overflow-x: auto; align-items: center;">
+<div style="display: flex; flex-wrap: nowrap; gap: 0.75rem; margin-top: 2rem; overflow-x: auto; align-items: center;">
   <a
     class="btn btn-secondary btn-lg rounded"
     href="{{ '/assets/pdf/NahyunLee_CV.pdf' | relative_url }}"
