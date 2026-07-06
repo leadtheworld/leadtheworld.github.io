@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <span style="font-size:2em; font-weight:660; color:#8a8a8a; font-style:italic;">Augmenting how we perceive the world</span>
+subtitle: <span style="font-size:2em; font-weight:800; color:#8a8a8a; font-style:italic;">Augmenting how we perceive the world</span>
 
 profile:
   align: right
