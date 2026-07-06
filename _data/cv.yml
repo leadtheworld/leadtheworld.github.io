@@ -7,9 +7,7 @@ cv:
   linkedIn: https://www.linkedin.com/in/leadtheworld
   summary: Augmenting how we perceive the world. My research explores the intersection of Cognitive Augmentation, Sensing, and Human–Computer Interaction. I aim to help people interpret an information-overloaded world.
 
-  
   sections:
-
     Education:
       - institution: Sungkyunkwan University
         location: Suwon, South Korea
@@ -145,7 +143,6 @@ cv:
 
       - name: Personal
         keywords: "Birdwatching"
-
 
 # cv:
 #   name: Albert Einstein

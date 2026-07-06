@@ -40,25 +40,31 @@ Currently a research intern at KAIST, I am advised by [Ian Oakley](https://schol
     Download CV
   </a>
 
-  <a
-    class="btn btn-secondary btn-lg rounded"
-    href="https://www.linkedin.com/in/leadtheworld/"
-    target="_blank"
-    rel="noopener noreferrer"
-    style="display: inline-flex; align-items: center; gap: 0.6rem; padding: 0.75rem 1.2rem; white-space: nowrap; background-color: #6c757d; border-color: #6c757d; color: #ffffff;"
-  >
+<a
+class="btn btn-secondary btn-lg rounded"
+href="https://www.linkedin.com/in/leadtheworld/"
+target="\_blank"
+rel="noopener noreferrer"
+style="display: inline-flex; align-items: center; gap: 0.6rem; padding: 0.75rem 1.2rem; white-space: nowrap; background-color: #6c757d; border-color: #6c757d; color: #ffffff;"
+
+>
+
     <i class="fab fa-linkedin"></i>
     LinkedIn
+
   </a>
 
-  <a
-    class="btn btn-secondary btn-lg rounded"
-    href="https://scholar.google.com/citations?hl=ko&view_op=list_works&gmla=AEk_c1speIk_T40O7IRLEmzPbVhstG8zGZGCmWbNTfKX0NfZ4SMB3PYag4NV_dwxSh5wUbX1r2msdUGS_KJ23pyA633F9tq3aKj7B5W4fkZ7mYR4uA&user=11pN9C4AAAAJ"
-    target="_blank"
-    rel="noopener noreferrer"
-    style="display: inline-flex; align-items: center; gap: 0.6rem; padding: 0.75rem 1.2rem; white-space: nowrap; background-color: #6c757d; border-color: #6c757d; color: #ffffff;"
-  >
+<a
+class="btn btn-secondary btn-lg rounded"
+href="https://scholar.google.com/citations?hl=ko&view_op=list_works&gmla=AEk_c1speIk_T40O7IRLEmzPbVhstG8zGZGCmWbNTfKX0NfZ4SMB3PYag4NV_dwxSh5wUbX1r2msdUGS_KJ23pyA633F9tq3aKj7B5W4fkZ7mYR4uA&user=11pN9C4AAAAJ"
+target="\_blank"
+rel="noopener noreferrer"
+style="display: inline-flex; align-items: center; gap: 0.6rem; padding: 0.75rem 1.2rem; white-space: nowrap; background-color: #6c757d; border-color: #6c757d; color: #ffffff;"
+
+>
+
     <i class="ai ai-google-scholar"></i>
     Google Scholar
+
   </a>
 </div>
