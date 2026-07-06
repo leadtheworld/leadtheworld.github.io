@@ -1,4 +1,4 @@
-<div class="col">
+<div class="col project-card-item" data-keywords="{{ project.keywords | join: '|' | downcase | strip }}">
   <a href="{% if project.redirect %}{{ project.redirect }}{% else %}{{ project.url | relative_url }}{% endif %}">
     <div class="card h-100 hoverable">
       {% if project.img %}
@@ -14,6 +14,26 @@
       <div class="card-body">
         <h2 class="card-title">{{ project.title }}</h2>
         <p class="card-text">{{ project.description }}</p>
+        {% if project.paper or project.doi or project.video or project.website or project.github %}
+          <div class="mb-2">
+            {% if project.paper %}
+              <a href="{% if project.paper contains '://' %}{{ project.paper }}{% else %}{{ project.paper | relative_url }}{% endif %}" class="btn btn-outline-secondary btn-sm mr-1 mb-1" target="_blank" rel="noopener noreferrer">Paper</a>
+            {% endif %}
+            {% if project.doi %}
+              {% assign doi_url = project.doi %}
+              {% unless doi_url contains '://' %}
+                {% assign doi_url = 'https://doi.org/' | append: project.doi %}
+              {% endunless %}
+              <a href="{{ doi_url }}" class="btn btn-outline-secondary btn-sm mr-1 mb-1" target="_blank" rel="noopener noreferrer">DOI</a>
+            {% endif %}
+            {% if project.video %}
+              <a href="{% if project.video contains '://' %}{{ project.video }}{% else %}{{ project.video | relative_url }}{% endif %}" class="btn btn-outline-secondary btn-sm mr-1 mb-1" target="_blank" rel="noopener noreferrer">Video</a>
+            {% endif %}
+            {% if project.website %}
+              <a href="{% if project.website contains '://' %}{{ project.website }}{% else %}{{ project.website | relative_url }}{% endif %}" class="btn btn-outline-secondary btn-sm mr-1 mb-1" target="_blank" rel="noopener noreferrer">Website</a>
+            {% endif %}
+          </div>
+        {% endif %}
         {% if project.collaborator or project.venue or project.keywords %}
           <div class="mt-2 small text-muted">
             {% if project.collaborator %}
@@ -23,7 +43,11 @@
               <div><strong>Venue:</strong> {{ project.venue }}</div>
             {% endif %}
             {% if project.keywords %}
-              <div><strong>Keywords:</strong> {{ project.keywords }}</div>
+              <div class="project-keywords">
+                {% for keyword in project.keywords %}
+                  <span class="badge badge-pill badge-secondary mr-1 mb-1">{{ keyword }}</span>
+                {% endfor %}
+              </div>
             {% endif %}
           </div>
         {% endif %}

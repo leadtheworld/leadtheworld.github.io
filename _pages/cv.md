@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /cv/
-title: # CV
+title: CV
 nav: true
 nav_order: 1
 cv_pdf: /assets/pdf/NahyunLee_CV.pdf # you can also use external links here
