@@ -11,6 +11,19 @@
           <div class="card-body">
             <h3 class="card-title">{{ project.title }}</h3>
             <p class="card-text">{{ project.description }}</p>
+            {% if project.collaborator or project.venue or project.keywords %}
+              <div class="mt-2 small text-muted">
+                {% if project.collaborator %}
+                  <div><strong>With:</strong> {{ project.collaborator }}</div>
+                {% endif %}
+                {% if project.venue %}
+                  <div><strong>Venue:</strong> {{ project.venue }}</div>
+                {% endif %}
+                {% if project.keywords %}
+                  <div><strong>Keywords:</strong> {{ project.keywords }}</div>
+                {% endif %}
+              </div>
+            {% endif %}
             <div class="row ml-1 mr-1 p-0">
               {% if project.github %}
                 <div class="github-icon">
