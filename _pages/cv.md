@@ -4,23 +4,22 @@ permalink: /cv/
 title: CV
 nav: true
 nav_order: 1
-cv_pdf: /assets/pdf/NahyunLee_CV.pdf # you can also use external links here
+hide_title: true
+cv_pdf: # Google Drive PDF embed ID (get from: https://drive.google.com/file/d/{FILE_ID}/view)
 description: # This is a description of the page. You can modify it in '_pages/cv.md'. You can also change or remove the top pdf download button.
 ---
 
 {% if page.cv_pdf %}
-{% assign cv_pdf_url = page.cv_pdf %}
-{% if page.cv_pdf contains '://' %}
-{% assign cv_pdf_url = page.cv_pdf %}
-{% else %}
-{% assign cv_pdf_url = page.cv_pdf | relative_url %}
-{% endif %}
-
-<div style="margin: 0 auto 1.5rem auto; max-width: 1170px; width: 100%; overflow: hidden; display: flex; justify-content: center;">
+<div style="margin: 0 auto 1.5rem auto; width: 100%; overflow: hidden; display: flex; justify-content: center;">
   <iframe
-    src="{{ cv_pdf_url }}"
+    src="https://drive.google.com/file/d/{{ page.cv_pdf }}/preview"
     title="CV PDF"
-    style="width: 100%; min-height: 900px; height: min(85vh, 1200px); border: 0;"
+    style="width: 100%; height: 100vh; border: none;"
+    allow="autoplay"
   ></iframe>
 </div>
+{% else %}
+<p style="text-align: center; color: var(--global-text-color-light); padding: 2rem;">
+  CV PDF is not yet configured. Please add your Google Drive file ID to the <code>cv_pdf</code> field in this page's front matter.
+</p>
 {% endif %}
