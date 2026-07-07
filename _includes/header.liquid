@@ -134,8 +134,12 @@
                   <a
                     class="nav-link"
                     href="{{ nav_url }}"
-                    {% if nav_target != '' %}target="{{ nav_target }}"{% endif %}
-                    {% if nav_rel != '' %}rel="{{ nav_rel }}"{% endif %}
+                    {% if nav_target != '' %}
+                      target="{{ nav_target }}"
+                    {% endif %}
+                    {% if nav_rel != '' %}
+                      rel="{{ nav_rel }}"
+                    {% endif %}
                   >
                     {{- p.title }}
                     {% if p.redirect_to == null and page.url contains p.url %}
