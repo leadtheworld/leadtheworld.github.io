@@ -26,10 +26,15 @@ latest_posts:
 ---
 
 <style>
+  /* Add space between subtitle and main intro text */
+  .post-description {
+    margin-bottom: 1.4em !important;
+  }
+
   .name-icon-links {
     display: inline-flex;
     align-items: center;
-    gap: 0.6rem;
+    gap: 0.45rem;
     margin-left: 0.9rem;
     vertical-align: middle;
     transform: translateY(-0.15rem);
@@ -39,6 +44,10 @@ latest_posts:
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    width: 1.9rem;
+    height: 1.9rem;
+    border: 1px solid currentColor;
+    border-radius: 50%;
     color: var(--global-text-color);
     background: transparent;
     text-decoration: none;
@@ -46,20 +55,24 @@ latest_posts:
     opacity: 0.9;
     transition:
       color 0.2s ease,
+      border-color 0.2s ease,
+      background-color 0.2s ease,
       opacity 0.2s ease,
       transform 0.2s ease;
   }
 
   .name-icon-links a:hover {
     color: #5a6b40;
+    border-color: #5a6b40;
+    background-color: transparent;
     opacity: 1;
     text-decoration: none;
     transform: translateY(-1px);
   }
 
   .name-icon-links svg {
-    width: 1.15rem;
-    height: 1.15rem;
+    width: 1rem;
+    height: 1rem;
     display: block;
     fill: none;
     stroke: currentColor;
@@ -68,12 +81,12 @@ latest_posts:
     stroke-linejoin: round;
   }
 
-  .name-icon-links .cv-icon text {
-    fill: currentColor;
-    stroke: none;
-    font-size: 8px;
-    font-weight: 700;
+  .name-icon-links .cv-label {
+    font-size: 0.58rem;
+    font-weight: 800;
+    letter-spacing: -0.02em;
     font-family: Arial, sans-serif;
+    line-height: 1;
   }
 
   .about-news-heading {
@@ -120,11 +133,7 @@ latest_posts:
           aria-label="CV"
           title="CV"
         >
-          <svg class="cv-icon" viewBox="0 0 24 24" aria-hidden="true">
-            <path d="M7 3h7l4 4v14H7z"></path>
-            <path d="M14 3v5h5"></path>
-            <text x="8.2" y="17">CV</text>
-          </svg>
+          <span class="cv-label">CV</span>
         </a>
 
         <a
