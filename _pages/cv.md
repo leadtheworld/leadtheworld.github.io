@@ -10,11 +10,11 @@ description: # CV page
 ---
 
 <script>
-  window.location.href =
-    "{{ page.redirect_to }}";
+  window.open("{{ page.redirect_to }}", "_blank");
+  window.location.href = "/";
 </script>
 
 <p>
-  Redirecting to CV... If not redirected,
-  <a href="{{ page.redirect_to }}">click here</a>.
+  Opening CV in a new tab...
+  <a href="{{ page.redirect_to }}" target="_blank">Click here if not opened</a>.
 </p>
