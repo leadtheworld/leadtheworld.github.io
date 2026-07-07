@@ -13,7 +13,8 @@ profile:
     <div style="display: flex; gap: 0.5rem; margin-top: 0.75rem; align-items: center; flex-wrap: nowrap;">
       <a
         href="{{ '/assets/pdf/NahyunLee_CV.pdf' | relative_url }}"
-        download
+        target="_blank"
+        rel="noopener noreferrer"
         style="display: inline-flex; align-items: center; gap: 0.4rem; padding: 0.5rem 0.8rem; white-space: nowrap; background-color: #5a6b40; border-color: #5a6b40; color: #ffffff; text-decoration: none; border-radius: 0.25rem; font-size: 0.9rem; border: 1px solid #5a6b40;"
       >
         <i class="fas fa-file-pdf"></i>
