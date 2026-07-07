@@ -10,32 +10,29 @@ profile:
   image_circular: false # crops the image to make it circular
   more_info: >
     <p>Now I'm at KAIST in Korea!</p>
-    <div style="display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 1rem; align-items: center;">
+    <div style="display: flex; gap: 0.5rem; margin-top: 0.75rem; align-items: center; flex-wrap: nowrap;">
       <a
-        class="btn btn-lg rounded"
         href="{{ '/assets/pdf/NahyunLee_CV.pdf' | relative_url }}"
         download
-        style="display: inline-flex; align-items: center; gap: 0.6rem; padding: 0.75rem 1.2rem; white-space: nowrap; background-color: #5a6b40; border-color: #5a6b40; color: #ffffff; text-decoration: none; border-radius: 0.375rem;"
+        style="display: inline-flex; align-items: center; gap: 0.4rem; padding: 0.5rem 0.8rem; white-space: nowrap; background-color: #5a6b40; border-color: #5a6b40; color: #ffffff; text-decoration: none; border-radius: 0.25rem; font-size: 0.9rem; border: 1px solid #5a6b40;"
       >
         <i class="fas fa-file-pdf"></i>
         CV
       </a>
       <a
-        class="btn btn-lg rounded"
         href="https://www.linkedin.com/in/leadtheworld/"
         target="_blank"
         rel="noopener noreferrer"
-        style="display: inline-flex; align-items: center; gap: 0.6rem; padding: 0.75rem 1.2rem; white-space: nowrap; background-color: #5a6b40; border-color: #5a6b40; color: #ffffff; text-decoration: none; border-radius: 0.375rem;"
+        style="display: inline-flex; align-items: center; gap: 0.4rem; padding: 0.5rem 0.8rem; white-space: nowrap; background-color: #5a6b40; border-color: #5a6b40; color: #ffffff; text-decoration: none; border-radius: 0.25rem; font-size: 0.9rem; border: 1px solid #5a6b40;"
       >
         <i class="fab fa-linkedin"></i>
         LinkedIn
       </a>
       <a
-        class="btn btn-lg rounded"
         href="https://scholar.google.com/citations?hl=ko&view_op=list_works&gmla=AEk_c1speIk_T40O7IRLEmzPbVhstG8zGZGCmWbNTfKX0NfZ4SMB3PYag4NV_dwxSh5wUbX1r2msdUGS_KJ23pyA633F9tq3aKj7B5W4fkZ7mYR4uA&user=11pN9C4AAAAJ"
         target="_blank"
         rel="noopener noreferrer"
-        style="display: inline-flex; align-items: center; gap: 0.6rem; padding: 0.75rem 1.2rem; white-space: nowrap; background-color: #5a6b40; border-color: #5a6b40; color: #ffffff; text-decoration: none; border-radius: 0.375rem;"
+        style="display: inline-flex; align-items: center; gap: 0.4rem; padding: 0.5rem 0.8rem; white-space: nowrap; background-color: #5a6b40; border-color: #5a6b40; color: #ffffff; text-decoration: none; border-radius: 0.25rem; font-size: 0.9rem; border: 1px solid #5a6b40;"
       >
         <i class="ai ai-google-scholar"></i>
         Google Scholar

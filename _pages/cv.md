@@ -10,6 +10,7 @@ description: # This is a description of the page. You can modify it in '_pages/c
 ---
 
 {% if page.cv_pdf %}
+
 <div style="margin: 0 auto 1.5rem auto; width: 100%; overflow: hidden; display: flex; justify-content: center;">
   <iframe
     src="https://drive.google.com/file/d/{{ page.cv_pdf }}/preview"
