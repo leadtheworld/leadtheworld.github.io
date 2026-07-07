@@ -29,7 +29,7 @@ latest_posts:
   .name-icon-links {
     display: inline-flex;
     align-items: center;
-    gap: 0.55rem;
+    gap: 0.6rem;
     margin-left: 0.9rem;
     vertical-align: middle;
     transform: translateY(-0.15rem);
@@ -42,10 +42,12 @@ latest_posts:
     color: var(--global-text-color);
     background: transparent;
     text-decoration: none;
-    font-size: 1.05rem;
     line-height: 1;
     opacity: 0.9;
-    transition: color 0.2s ease, opacity 0.2s ease, transform 0.2s ease;
+    transition:
+      color 0.2s ease,
+      opacity 0.2s ease,
+      transform 0.2s ease;
   }
 
   .name-icon-links a:hover {
@@ -55,16 +57,27 @@ latest_posts:
     transform: translateY(-1px);
   }
 
-  .name-icon-links a:visited {
-    color: var(--global-text-color);
+  .name-icon-links svg {
+    width: 1.15rem;
+    height: 1.15rem;
+    display: block;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
   }
 
-  .name-icon-links a:visited:hover {
-    color: #5a6b40;
+  .name-icon-links .cv-icon text {
+    fill: currentColor;
+    stroke: none;
+    font-size: 8px;
+    font-weight: 700;
+    font-family: Arial, sans-serif;
   }
 
-  .name-icon-links i {
-    display: inline-block;
+  .about-news-heading {
+    margin-top: 4rem !important;
   }
 
   @media (max-width: 768px) {
@@ -74,6 +87,10 @@ latest_posts:
       margin-top: 0.75rem;
       transform: none;
     }
+
+    .about-news-heading {
+      margin-top: 3rem !important;
+    }
   }
 </style>
 
@@ -81,51 +98,71 @@ latest_posts:
   document.addEventListener("DOMContentLoaded", function () {
     const title = document.querySelector(".post-title");
 
-    if (!title || title.querySelector(".name-icon-links")) return;
+    if (title && !title.querySelector(".name-icon-links")) {
+      const iconLinks = document.createElement("span");
+      iconLinks.className = "name-icon-links";
+      iconLinks.innerHTML = `
+        <a
+          href="mailto:leadtheworld@g.skku.edu?subject=Research%20or%20Collaboration%20Inquiry"
+          aria-label="Email"
+          title="Email"
+        >
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <rect x="3" y="5" width="18" height="14" rx="2"></rect>
+            <path d="M3 7l9 6 9-6"></path>
+          </svg>
+        </a>
 
-    const iconLinks = document.createElement("span");
-    iconLinks.className = "name-icon-links";
-    iconLinks.innerHTML = `
-      <a
-        href="mailto:leadtheworld@g.skku.edu?subject=Research%20or%20Collaboration%20Inquiry"
-        aria-label="Email"
-        title="Email"
-      >
-        <i class="fa-solid fa-envelope"></i>
-      </a>
+        <a
+          href="{{ '/assets/pdf/NahyunLee_CV.pdf' | relative_url }}"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="CV"
+          title="CV"
+        >
+          <svg class="cv-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M7 3h7l4 4v14H7z"></path>
+            <path d="M14 3v5h5"></path>
+            <text x="8.2" y="17">CV</text>
+          </svg>
+        </a>
 
-      <a
-        href="/assets/pdf/NahyunLee_CV.pdf"
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="CV"
-        title="CV"
-      >
-        <i class="ai ai-cv"></i>
-      </a>
+        <a
+          href="https://www.linkedin.com/in/leadtheworld/"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="LinkedIn"
+          title="LinkedIn"
+        >
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M4 9h4v11H4z"></path>
+            <path d="M6 4.5a2 2 0 1 1 0 4a2 2 0 0 1 0-4z"></path>
+            <path d="M11 9h4v1.7c.6-1 1.7-2 3.5-2c2.5 0 4.5 1.6 4.5 5.1V20h-4v-5.6c0-1.5-.5-2.5-1.9-2.5c-1 0-1.6.7-1.9 1.3c-.1.2-.2.6-.2.9V20h-4z"></path>
+          </svg>
+        </a>
 
-      <a
-        href="https://www.linkedin.com/in/leadtheworld/"
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="LinkedIn"
-        title="LinkedIn"
-      >
-        <i class="fa-brands fa-linkedin"></i>
-      </a>
+        <a
+          href="https://scholar.google.com/citations?hl=ko&view_op=list_works&gmla=AEk_c1speIk_T40O7IRLEmzPbVhstG8zGZGCmWbNTfKX0NfZ4SMB3PYag4NV_dwxSh5wUbX1r2msdUGS_KJ23pyA633F9tq3aKj7B5W4fkZ7mYR4uA&user=11pN9C4AAAAJ"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Google Scholar"
+          title="Google Scholar"
+        >
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 3L3 8l9 5l9-5z"></path>
+            <path d="M7 11v4c0 2 2.2 4 5 4s5-2 5-4v-4"></path>
+          </svg>
+        </a>
+      `;
 
-      <a
-        href="https://scholar.google.com/citations?hl=ko&view_op=list_works&gmla=AEk_c1speIk_T40O7IRLEmzPbVhstG8zGZGCmWbNTfKX0NfZ4SMB3PYag4NV_dwxSh5wUbX1r2msdUGS_KJ23pyA633F9tq3aKj7B5W4fkZ7mYR4uA&user=11pN9C4AAAAJ"
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="Google Scholar"
-        title="Google Scholar"
-      >
-        <i class="ai ai-google-scholar"></i>
-      </a>
-    `;
+      title.appendChild(iconLinks);
+    }
 
-    title.appendChild(iconLinks);
+    document.querySelectorAll("h2").forEach(function (heading) {
+      if (heading.textContent.trim().toLowerCase() === "news") {
+        heading.classList.add("about-news-heading");
+      }
+    });
   });
 </script>
 
