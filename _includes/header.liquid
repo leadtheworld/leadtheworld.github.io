@@ -24,6 +24,7 @@
         <!-- Social Icons -->
         <div class="navbar-brand social">{% social_links %}</div>
       {% endif %}
+
       <!-- Navbar Toggle -->
       <button
         class="navbar-toggler collapsed ml-auto"
@@ -42,8 +43,10 @@
 
       <div class="collapse navbar-collapse text-right" id="navbarNav">
         <ul class="navbar-nav ml-auto flex-nowrap">
-          {% for page in site.pages %}
-            {% if page.permalink == '/' %} {% assign about_title = page.title %} {% endif %}
+          {% for page_item in site.pages %}
+            {% if page_item.permalink == '/' %}
+              {% assign about_title = page_item.title %}
+            {% endif %}
           {% endfor %}
 
           <!-- About -->
@@ -67,6 +70,7 @@
                     {% assign has_active_child = true %}
                   {% endif %}
                 {% endfor %}
+
                 <li class="nav-item dropdown {% if page.title == p.title or has_active_child %}active{% endif %}">
                   <a
                     class="nav-link dropdown-toggle"
@@ -82,6 +86,7 @@
                       <span class="sr-only">(current)</span>
                     {% endif %}
                   </a>
+
                   <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                     {% for child in p.children %}
                       {% if child.title == 'divider' %}
@@ -97,19 +102,43 @@
                     {% endfor %}
                   </div>
                 </li>
+
               {% else %}
                 {% assign parent_link = p.permalink | remove: 'index.html' %}
-                <li class="nav-item {% if page.url contains parent_link %}active{% endif %}">
-                  {%- if p.permalink contains '://' -%}
-                    {%- assign url = p.permalink -%}
-                  {%- elsif p.permalink contains '/blog/' -%}
-                    {%- assign url = '/blog/' -%}
-                  {%- else -%}
-                    {%- assign url = p.url -%}
-                  {%- endif %}
-                  <a class="nav-link" href="{{ url | relative_url }}">
+
+                {% if p.redirect_to %}
+                  {% assign raw_url = p.redirect_to %}
+                  {% assign nav_target = '_blank' %}
+                  {% assign nav_rel = 'noopener noreferrer' %}
+                {% elsif p.permalink contains '://' %}
+                  {% assign raw_url = p.permalink %}
+                  {% assign nav_target = '' %}
+                  {% assign nav_rel = '' %}
+                {% elsif p.permalink contains '/blog/' %}
+                  {% assign raw_url = '/blog/' %}
+                  {% assign nav_target = '' %}
+                  {% assign nav_rel = '' %}
+                {% else %}
+                  {% assign raw_url = p.url %}
+                  {% assign nav_target = '' %}
+                  {% assign nav_rel = '' %}
+                {% endif %}
+
+                {% if raw_url contains '://' %}
+                  {% assign nav_url = raw_url %}
+                {% else %}
+                  {% assign nav_url = raw_url | relative_url %}
+                {% endif %}
+
+                <li class="nav-item {% if p.redirect_to == null and page.url contains parent_link %}active{% endif %}">
+                  <a
+                    class="nav-link"
+                    href="{{ nav_url }}"
+                    {% if nav_target != '' %}target="{{ nav_target }}"{% endif %}
+                    {% if nav_rel != '' %}rel="{{ nav_rel }}"{% endif %}
+                  >
                     {{- p.title }}
-                    {% if page.url contains p.url %}
+                    {% if p.redirect_to == null and page.url contains p.url %}
                       <span class="sr-only">(current)</span>
                     {% endif %}
                   </a>
@@ -117,6 +146,7 @@
               {% endif %}
             {% endif %}
           {% endfor %}
+
           {% if site.search_enabled %}
             <!-- Search -->
             <li class="nav-item">
@@ -125,8 +155,9 @@
               </button>
             </li>
           {% endif %}
+
           {% if site.enable_darkmode %}
-            <!-- Toogle theme mode -->
+            <!-- Toggle theme mode -->
             <li class="toggle-container">
               <button id="light-toggle" title="Change theme">
                 <i class="fa-half-sun-moon" id="light-toggle-system"></i>
@@ -139,6 +170,7 @@
       </div>
     </div>
   </nav>
+
   {% if site.enable_progressbar %}
     <!-- Scrolling Progress Bar -->
     <progress id="progress" value="0">

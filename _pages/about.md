@@ -29,8 +29,8 @@ latest_posts:
   .name-icon-links {
     display: inline-flex;
     align-items: center;
-    gap: 0.45rem;
-    margin-left: 0.85rem;
+    gap: 0.55rem;
+    margin-left: 0.9rem;
     vertical-align: middle;
     transform: translateY(-0.15rem);
   }
@@ -39,29 +39,32 @@ latest_posts:
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 1.95rem;
-    height: 1.95rem;
-    border: 1px solid #5a6b40;
-    border-radius: 50%;
-    color: #5a6b40;
+    color: var(--global-text-color);
     background: transparent;
     text-decoration: none;
-    font-size: 0.95rem;
-    transition: background-color 0.2s ease, color 0.2s ease, opacity 0.2s ease;
+    font-size: 1.05rem;
+    line-height: 1;
+    opacity: 0.9;
+    transition: color 0.2s ease, opacity 0.2s ease, transform 0.2s ease;
   }
 
   .name-icon-links a:hover {
-    background-color: #5a6b40;
-    color: #ffffff;
+    color: #5a6b40;
+    opacity: 1;
     text-decoration: none;
+    transform: translateY(-1px);
   }
 
   .name-icon-links a:visited {
-    color: #5a6b40;
+    color: var(--global-text-color);
   }
 
   .name-icon-links a:visited:hover {
-    color: #ffffff;
+    color: #5a6b40;
+  }
+
+  .name-icon-links i {
+    display: inline-block;
   }
 
   @media (max-width: 768px) {
@@ -88,7 +91,7 @@ latest_posts:
         aria-label="Email"
         title="Email"
       >
-        <i class="fas fa-envelope"></i>
+        <i class="fa-solid fa-envelope"></i>
       </a>
 
       <a
@@ -98,7 +101,7 @@ latest_posts:
         aria-label="CV"
         title="CV"
       >
-        <i class="fas fa-file-pdf"></i>
+        <i class="ai ai-cv"></i>
       </a>
 
       <a
@@ -108,7 +111,7 @@ latest_posts:
         aria-label="LinkedIn"
         title="LinkedIn"
       >
-        <i class="fab fa-linkedin"></i>
+        <i class="fa-brands fa-linkedin"></i>
       </a>
 
       <a
@@ -126,6 +129,6 @@ latest_posts:
   });
 </script>
 
-I am a forth-year undergraduate researcher at `Sungkyunkwan University`, pursuing a triple major in Mechanical Engineering, Software Engineering, and a self-designed major in Human–Computer Interaction (HCI). My research explores the intersection of `Cognitive Augmentation`, `VR/AR`, `Haptics`, and `HCI`. I aim to augment human perception to make the world more interpretable and intuitive in increasingly information-rich environments.
+I am a fourth-year undergraduate researcher at `Sungkyunkwan University`, pursuing a triple major in Mechanical Engineering, Software Engineering, and a self-designed major in Human–Computer Interaction (HCI). My research explores the intersection of `Cognitive Augmentation`, `VR/AR`, `Haptics`, and `HCI`. I aim to augment human perception to make the world more interpretable and intuitive in increasingly information-rich environments.
 
 Currently a research intern at KAIST, I am advised by [Ian Oakley](https://scholar.google.com/citations?user=eth0NcUAAAAJ&hl=ko&oi=ao) in [the Wearable Interaction Technology Lab](https://wit.kaist.ac.kr/). Previously, I conducted research with the Interaction Independence Study Group at the Stanford Center at the Incheon Global Campus under the supervision of Hoseok Jung (2024–2025). I am a recipient of the Presidential Science Scholarship since 2025.
