@@ -1,0 +1,30 @@
+- id: skku
+  name: Sungkyunkwan University
+  url: https://www.skku.edu/eng/
+  image: /assets/img/institutions/skku-supplied.png
+  fit: trim
+- id: snu
+  name: Seoul National University
+  url: https://en.snu.ac.kr/
+  image: /assets/img/institutions/snu-supplied.jpg
+  fit: contain
+- id: kaist
+  name: KAIST
+  url: https://www.kaist.ac.kr/en/
+  image: /assets/img/institutions/kaist-supplied.webp
+  fit: contain
+- id: tu-wien
+  name: TU Wien
+  url: https://www.tuwien.at/en/
+  image: /assets/img/institutions/tu-wien-supplied.png
+  fit: trim
+- id: imperial
+  name: Imperial College London
+  url: https://www.imperial.ac.uk/
+  image: /assets/img/institutions/imperial-supplied.jpg
+  fit: trim
+- id: scigc
+  name: Stanford Center at the Incheon Global Campus
+  url: https://korea.stanford.edu/
+  image: /assets/img/institutions/scigc-supplied.jpg
+  fit: contain

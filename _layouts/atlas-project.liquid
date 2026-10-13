@@ -1,0 +1,28 @@
+---
+layout: atlas
+---
+{% assign project = site.data.atlas.projects | where: 'id', page.project_id | first %}
+<article class="page-width inner-page post-page">
+  <a class="back-link" href="{{ '/#research-atlas' | relative_url }}">← Research globe</a>
+  <header class="post-title">
+    <p class="publication-status">Research project · {{ project.period }}</p>
+    <h1>{{ page.title }}</h1>
+    <p class="post-deck">{{ page.description }}</p>
+    <div class="method-tags">
+      {% for method in project.methods -%}
+        <span>{{ method }}</span>
+      {%- endfor %}
+    </div>
+  </header>
+  <div class="post-body">{{ content }}</div>
+  {% assign stories = site.posts | where: 'project_id', project.id %}
+  {% if stories.size > 0 %}
+    <section class="post-related">
+      <h2>Behind the project</h2>
+      {% for story in stories -%}
+        <a href="{{ story.url | relative_url }}">{{ story.title }} ↗</a>
+      {%- endfor %}
+    </section>
+  {% endif %}
+  <div class="post-ending"><a class="text-link" href="{{ '/publications/' | relative_url }}">Publications ↗</a></div>
+</article>

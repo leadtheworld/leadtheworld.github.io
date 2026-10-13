@@ -1,0 +1,437 @@
+clusters:
+  - id: embodied
+    number: "01"
+    title: Building sensory feedback
+    short: Physical feedback
+    color: "#5d6a45"
+    lat: 30
+    lon: -44
+    period: Mar 2024 – Dec 2025
+    organization: SCIGC · Stanford Center at the Incheon Global Campus
+    question: How can virtual worlds extend what we can experience?
+    description: At SCIGC, I worked on making virtual experiences physically tangible. I built thermal haptic devices for
+      research on Mars exploration and firefighter training, and developed a Fire Dynamics Simulator (FDS) data pipeline
+      for thermal feedback in simulated fires.
+    approach: I developed wearable and encountered-type thermal haptic interfaces and an FDS–Unity pipeline that translated
+      simulated fire conditions into spatially varying thermal feedback.
+    open_question: "Building these systems raised a practical question: how much physical detail is necessary for a convincing
+      experience, especially when devices become heavy or cumbersome?"
+  - id: perception
+    number: "02"
+    title: Designing perceptual cues
+    short: Perceptual cues
+    color: "#5d8587"
+    lat: 25
+    lon: 45
+    period: Jan 2026 – Sep 2026
+    organization: KAIST · Wearable and Interactive Technology Lab
+    question: Can simpler cues make virtual touch feel real?
+    description: At KAIST, I explored how simpler cues could support convincing virtual touch. One project used granular
+      synthesis to assemble short signal fragments into movement-coupled vibration. A second investigated audiovisual-tactile
+      illusions on virtual surfaces. Two-alternative forced-choice (2AFC) and VR interaction studies revealed that effects
+      on haptic experience depended on the task.
+    approach: With Prof. Ian Oakley and in collaboration with Prof. Sangho Yoon at KAIST’s HCI Tech Lab, I led hardware
+      and VR implementation, user-study design and execution, data analysis, and manuscript writing.
+    open_question: "Seeing different responses to haptic feedback drew my attention to interpretation itself: why can similar
+      inputs produce different experiences?"
+  - id: interpretation
+    number: "03"
+    title: Supporting interpretation
+    short: Interpretation & reflection
+    color: "#a47a5b"
+    lat: -32
+    lon: -10
+    period: Sep 2025 – Sep 2026
+    organization: Future Computing Lab · Sungkyunkwan University
+    question: How can interfaces support the way we interpret?
+    description: At Future Computing Lab, I explored this question in stock investing. One app helps people notice missing
+      evidence before deciding. FacingLoss uses a five-stage loss-acceptance framework derived from interviews to support
+      reflection on losses and learning for future decisions.
+    approach: Advised by Prof. Sunjae Lee and collaborating with Dr. Hyeon Jeon at Seoul National University, I led app
+      and web development, study design and execution, data analysis, and manuscript writing.
+    open_question: A carefully considered decision can still have an unfavorable outcome. How do prior beliefs and emotions
+      shape the way we interpret that outcome, and how can those processes be modeled?
+  - id: sensing
+    number: In parallel
+    title: Making measurements usable
+    short: Accessible measurement
+    color: "#77815d"
+    lat: -5
+    lon: 108
+    period: "2025"
+    branch: true
+    organization: Smart Biomedical Lab · Sungkyunkwan University
+    question: How can measurements become usable for older adults?
+    description: Alongside these questions, I worked on accessible muscle-function assessment. I connected a load cell
+      and an inertial measurement unit (IMU) to a mobile app, bringing real-time measurements into an interface designed
+      for older adults.
+    approach: I developed the sensing device and mobile interface in collaboration with Korea University Medicine and KAIST.
+    open_question: "This work connects sensing hardware with HCI: collecting a signal is only one part of making information
+      accessible to the person using it."
+  - id: information
+    number: ""
+    title: Related work on information access
+    short: Information access
+    color: "#738183"
+    lat: -45
+    lon: -103
+    period: 2024–2026
+    story: false
+projects:
+  - id: mars
+    title: Mars thermal haptics
+    short_title: Mars haptics
+    cluster: embodied
+    lat: 47
+    lon: -62
+    period: 2024–2026
+    status: Conference work
+    summary: Building thermal feedback for virtual Mars exploration.
+    question: How can thermal feedback make virtual Mars exploration tangible?
+    methods:
+      - Wearable haptics
+      - VR
+      - Prototyping
+    contribution: Built thermal haptic devices within the SCIGC research program on physically tangible virtual experiences.
+    publications:
+      - thermal-kinesthetic
+      - wrist-robot
+      - mars-simulation
+      - mars-exhibit
+    blog: null
+    body:
+      - This line of work explores encountered force and thermal feedback in a Mars exploration setting. The interface connects
+        physical sensation with a virtual environment.
+      - The related publications span a multimodal simulation, a science exhibit proposal, a wrist-worn articulated robot,
+        and a wearable thermal-kinesthetic interface.
+    connection: Building physical feedback systems led me to ask how much stimulation is needed for a convincing virtual
+      experience.
+    detail_url: /publications/thermal-kinesthetic/
+  - id: firefighter
+    title: Feeling the Heat
+    short_title: Feeling the Heat
+    cluster: embodied
+    lat: 28
+    lon: -28
+    period: 2024–2026
+    status: Under review
+    summary: Visual and thermal cues for firefighter sensemaking.
+    question: How can visual and thermal information support awareness and decisions in a simulated fire?
+    methods:
+      - Mixed reality
+      - Thermal feedback
+      - User studies
+    contribution: Built thermal haptic hardware and developed the FDS data pipeline that connected simulated fire conditions
+      with sensory feedback in XR.
+    publications:
+      - feeling-the-heat
+      - firefighter-training
+    blog: null
+    body:
+      - "Firefighter training brings perception and action close together: a cue matters because of what a person does with
+        it. This work examines visual and thermal integration in mixed reality."
+      - The two manuscripts in this area address situational awareness, decision performance, sensemaking, and cognitive
+        load. Both are listed as under review in my CV.
+    connection: The technical challenge of delivering realistic cues led to questions about simpler devices and the way
+      users interpret feedback.
+    detail_url: /publications/feeling-the-heat/
+  - id: fire-dynamics
+    title: FDS thermal feedback
+    short_title: FDS haptics
+    cluster: embodied
+    lat: 17
+    lon: -57
+    period: 2024–2026
+    status: VRST 2026 poster
+    summary: Translating fire simulation into thermal feedback.
+    question: How can a simulated fire drive physically meaningful thermal cues?
+    methods:
+      - FDS
+      - Thermal haptics
+      - Unity / VR
+    contribution: Built the Fire Dynamics Simulator–Unity pipeline to translate fire conditions into spatially varying
+      thermal feedback, alongside thermal-device prototyping.
+    publications:
+      - fire-dynamics
+    blog: null
+    body:
+      - Fire Dynamics Simulator provides a physical description of a fire environment. This work links simulation data with
+        thermal haptic feedback in virtual reality.
+      - The central implementation problem is how to translate a spatially varying simulated environment into feedback available
+        at a physical interface.
+    connection: Physically grounded simulation was a starting point for asking how much physical detail a convincing experience
+      actually needs.
+    detail_url: /publications/fire-dynamics/
+  - id: feelsound
+    title: FeelSound
+    short_title: FeelSound
+    cluster: perception
+    lat: 38
+    lon: 60
+    period: "2026"
+    status: In progress
+    summary: Movement-coupled vibration from granular synthesis, studied through behavioral and VR interaction experiments.
+    question: Can granular synthesis create convincing tactile feedback from short signal fragments?
+    methods:
+      - Granular synthesis
+      - Vibrotactile feedback
+      - VR
+      - User studies
+      - 2AFC experiments
+    contribution: Led hardware and VR implementation, user-study design and execution, data analysis, and manuscript writing
+      at KAIST WIT Lab.
+    publications: []
+    blog: null
+    body:
+      - This project explored simpler cues for convincing virtual touch. Granular synthesis assembled short signal fragments
+        into vibrotactile feedback coupled to a person’s movement in VR.
+      - I designed and conducted two-alternative forced-choice (2AFC) experiments and VR interaction studies, identifying
+        task-dependent effects on haptic experience.
+    connection: Differences in how people experienced feedback prompted questions about the processes that turn a sensory
+      cue into an interpretation.
+    detail_url: /research/feelsound/
+  - id: audiovisual-touch
+    title: VR tactile illusion
+    short_title: VR illusion
+    cluster: perception
+    lat: 14
+    lon: 34
+    period: "2026"
+    status: In progress
+    summary: Can visual and auditory cues support the perception of touch?
+    question: Can visual–auditory illusions support the perception of touch on a virtual surface?
+    methods:
+      - Granular synthesis
+      - Multisensory perception
+      - VR
+      - User studies
+    contribution: Led device and VR implementation, user-study design and execution, data analysis, and manuscript writing
+      at KAIST WIT Lab.
+    publications: []
+    blog: null
+    body:
+      - This project investigated how granular synthesis and visual–auditory illusions could shape the perception of touch
+        during interaction with virtual surfaces.
+      - The aim was to explore simpler perceptual cues as a route to convincing virtual interaction. I built the experimental
+        environment and studied how people experienced these cues.
+    connection: Variation in participants’ experiences drew my attention to how people interpret an input, connecting this
+      work with questions about decision-making and reflection.
+    detail_url: /research/audiovisual-touch/
+  - id: beamforming
+    title: Listening to everyday signals
+    short_title: Beamforming
+    cluster: information
+    lat: -26
+    lon: -109
+    period: "2026"
+    status: Research project
+    summary: Audio sensing for information in everyday environments.
+    question: How can audio sensing make everyday information more accessible?
+    methods:
+      - Beamforming
+      - Audio sensing
+      - Perception
+    contribution: Investigated beamforming-based audio sensing during my KAIST WIT Lab internship.
+    publications: []
+    blog: null
+    body:
+      - This research direction investigates beamforming-based audio sensing to enhance perception of everyday information.
+        Beamforming uses information across microphones to emphasize signals from particular directions.
+      - The application question concerns which signals should be brought to a person’s attention, and how sensing can become
+        useful information.
+    connection: "The broader question links sensing to interpretation: detecting a signal does not by itself explain its
+      meaning to a person."
+    detail_url: /research/beamforming/
+  - id: muscle
+    title: Accessible muscle sensing
+    short_title: Muscle sensing
+    cluster: sensing
+    lat: 8
+    lon: 117
+    period: "2025"
+    status: Research project
+    summary: Connecting muscle-function sensing with an accessible mobile interface.
+    question: How can muscle-function measurements become accessible and usable for older adults?
+    methods:
+      - Load cell + IMU
+      - Bluetooth LE
+      - Mobile app
+    contribution: Developed a load-cell and IMU device with Bluetooth Low Energy and a mobile app for real-time sensing
+      and interaction for older adults.
+    publications: []
+    blog: null
+    body:
+      - At the Smart Biomedical Lab, I worked on a muscle function assessment device combining a load cell and an inertial
+        measurement unit. The system communicates using Bluetooth Low Energy.
+      - The project included a mobile app for real-time sensing and accessible interaction for older adults, in collaboration
+        with Korea University Medicine and KAIST.
+    connection: This parallel project connects hardware with HCI by asking how measured signals can become information
+      people can access and use.
+    detail_url: /research/muscle/
+  - id: imu
+    title: IMU evaluation
+    short_title: IMU evaluation
+    cluster: sensing
+    lat: -20
+    lon: 94
+    period: "2025"
+    status: ICCE-Asia 2025
+    summary: A smartphone testbed for small inertial sensors.
+    question: How can small IMU modules be evaluated using an accessible testbed?
+    methods:
+      - IMU
+      - Smartphone
+      - Quantitative evaluation
+    contribution: Coauthored work on a low-cost quantitative evaluation testbed for small IMU sensor modules.
+    publications:
+      - imu-testbed
+    blog: null
+    body:
+      - An inertial measurement unit combines sensors used to describe motion. Before interpreting data from such a device,
+        the behavior of the sensor itself needs to be evaluated.
+      - This conference paper presents a low-cost evaluation testbed using a smartphone. It is listed in ICCE-Asia 2025.
+    connection: Reliable interpretation begins with understanding the measurement that supports it.
+    detail_url: /publications/imu-testbed/
+  - id: evidence
+    title: Missing evidence
+    short_title: Missing evidence
+    cluster: interpretation
+    lat: -19
+    lon: -4
+    period: "2026"
+    status: CHI 2026 poster
+    summary: Helping investors notice the information they have not considered.
+    question: How can people notice missing evidence in an information-rich decision environment?
+    methods:
+      - Information visualization
+      - Decision support
+      - HCI
+    contribution: Led app development, user-study design and execution, data analysis, and manuscript writing; first author
+      of the CHI 2026 poster.
+    publications:
+      - missing-evidence
+    blog: null
+    body:
+      - An information-rich interface can still leave important questions unexamined. This project asks how people can recognize
+        the areas they have not yet considered before making an investment decision.
+      - The app makes gaps in investment evidence visible so users can examine what they know, what is missing, and whether
+        they are ready to decide.
+    connection: This project addresses interpretation before a decision. FacingLoss extends the question to how people
+      make sense of an unfavorable outcome afterward.
+    detail_url: /publications/missing-evidence/
+  - id: facingloss
+    title: FacingLoss
+    short_title: FacingLoss
+    cluster: interpretation
+    lat: -42
+    lon: -29
+    period: "2026"
+    status: Under review
+    summary: Helping investors turn interpretations of loss into learning for future decisions.
+    question: How can people interpret investment losses in ways that support learning for future decisions?
+    methods:
+      - Interviews
+      - Structured reflection
+      - LLM-supported interface
+    contribution: Led web-system development, formative interviews, study design and execution, data analysis, and manuscript
+      writing as first author.
+    publications:
+      - facingloss
+    blog: null
+    body:
+      - Under uncertainty, a carefully considered decision can still lead to a loss. FacingLoss investigates how people interpret
+        these outcomes and how reflection can support learning for future decisions.
+      - Interviews with 12 investors informed a five-stage framework of loss acceptance and a system for reconstructing experiences,
+        considering different perspectives, and forming personal investment principles.
+      - An exploratory study involved 12 participants and a one-week follow-up. The study had no control group; the manuscript
+        is under review.
+    connection: Together with the missing-evidence project, this work links interpretation before a decision with reflection
+      afterward. It motivates my interest in the cognitive and neural mechanisms of perception and decision-making.
+    detail_url: /publications/facingloss/
+  - id: digital-twin
+    title: VR digital twin
+    short_title: VR digital twin
+    cluster: information
+    lat: -46
+    lon: -82
+    period: "2026"
+    status: Under review
+    summary: VR, building information, and distinct AI agent roles.
+    question: How can information and AI support remain grounded in a spatial environment?
+    methods:
+      - VR
+      - BIM / digital twin
+      - LLM agents
+    contribution: Coauthored a VR-based digital twin framework for building operation and maintenance.
+    publications:
+      - digital-twin
+    blog: null
+    body:
+      - This manuscript brings together a VR digital twin, building information modeling, and role-separated LLM agent services.
+        Its application is HVAC operation and maintenance.
+      - "The spatial setting is central to the research question: the information a person needs is connected to where a
+        system or component exists within a building."
+    connection: This work connects interactive environments with access to information and decision support.
+    detail_url: /publications/digital-twin/
+  - id: workplace-ai
+    title: Workplace AI assistant
+    short_title: Workplace AI
+    cluster: information
+    lat: -61
+    lon: -117
+    period: "2024"
+    status: KSCI 2024
+    summary: A chatbot for workplace information and safety support.
+    question: How can a conversational interface support access to workplace information?
+    methods:
+      - LLMs
+      - Conversational interfaces
+      - Safety support
+    contribution: Coauthored an LLM-based chatbot system for worker efficiency and safety.
+    publications:
+      - workplace-ai
+    blog: null
+    body:
+      - This conference work explores an LLM-based chatbot intended to support worker efficiency and the prevention of safety
+        incidents.
+      - It forms an early part of my work on interfaces that connect people to information relevant to an action or decision.
+    connection: "The theme carries into later work on missing evidence and spatial AI: how information is presented affects
+      how people can use it."
+    detail_url: /publications/workplace-ai/
+edges:
+  - source: mars
+    target: firefighter
+    label: Thermal feedback across virtual exploration and training
+  - source: firefighter
+    target: fire-dynamics
+    label: Simulation data drives the physical feedback
+  - source: mars
+    target: feelsound
+    label: From detailed physical feedback to simpler perceptual cues
+  - source: feelsound
+    target: audiovisual-touch
+    label: From synthesized vibration to visual–auditory cues for touch
+  - source: audiovisual-touch
+    target: evidence
+    label: Different experiences of an input raise questions about interpretation
+  - source: evidence
+    target: facingloss
+    label: Recognizing information gaps before a decision; reflecting on an outcome afterward
+  - source: muscle
+    target: imu
+    label: Understanding the measurements behind a usable interface
+  - source: muscle
+    target: feelsound
+    label: Building interfaces around how people access and experience signals
+  - source: muscle
+    target: evidence
+    label: Making information accessible to the person using it
+  - source: beamforming
+    target: feelsound
+    label: Audio as a source of perceptual information
+  - source: digital-twin
+    target: workplace-ai
+    label: Information support grounded in a task
+  - source: evidence
+    target: digital-twin
+    label: Helping people examine information for decisions

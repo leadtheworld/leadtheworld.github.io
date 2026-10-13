@@ -1,0 +1,31 @@
+---
+layout: atlas
+---
+<div class="page-width inner-page news-page">
+  <header class="page-title">
+    <h1>News<span class="title-dot">.</span></h1>
+    <p>Research updates, milestones, and new chapters.</p>
+  </header>
+  {% assign news_items = site.data.atlas_news.items | where: 'published', true | sort: 'datetime' | reverse %}
+  <div class="news-list">
+    {% for item in news_items %}
+      <article class="news-item">
+        <time datetime="{{ item.datetime }}">{{ item.date }}</time>
+        <div>
+          <h2>
+            <a
+              href="{{ item.linkedin_url | default: item.url | relative_url }}"
+              {% if item.linkedin_url != '' and item.linkedin_url %}
+                target="_blank" rel="noopener noreferrer"
+              {% endif %}
+            >
+              {{- item.title -}}
+            </a>
+          </h2>
+          <p>{{ item.description }}</p>
+        </div>
+      </article>
+    {% endfor %}
+  </div>
+  <a class="text-link news-home-link" href="{{ '/' | relative_url }}">Back home ↗</a>
+</div>

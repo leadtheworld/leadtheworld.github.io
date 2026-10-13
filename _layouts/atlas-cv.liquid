@@ -1,0 +1,118 @@
+---
+layout: atlas
+---
+<div class="page-width inner-page">
+  <header class="page-title cv-title">
+    <div>
+      <h1>Curriculum vitae<span class="title-dot">.</span></h1>
+      <div class="cv-contact">
+        <span>{{ site.data.atlas_cv.contact.phone }}</span>
+        <a href="mailto:{{ site.data.atlas_cv.contact.email }}">{{ site.data.atlas_cv.contact.email }}</a>
+      </div>
+      <p class="cv-contact-location">{{ site.data.atlas_cv.contact.location }}</p>
+    </div>
+    <a class="button solid" href="{{ '/assets/pdf/NahyunLee_CV.pdf' | relative_url }}" download>Download CV <span aria-hidden="true">↓</span></a>
+  </header>
+  <div class="cv-grid">
+    <nav class="cv-toc" aria-label="CV sections">
+      <a href="#research-interests">Research interests</a>
+      <a href="#education">Education</a>
+      <a href="#research">Research experience</a>
+      <a href="#cv-publications">Publications</a>
+      <a href="#service">Academic service</a>
+      <a href="#skills">Skills</a>
+      <a href="#industry">Startup experience</a>
+      <a href="#teaching">Teaching &amp; leadership</a>
+      <a href="#honors">Honors</a>
+      <a href="#awards">Awards</a>
+      <a href="#scholarships">Scholarships</a>
+      <a href="#additional">Additional information</a>
+    </nav>
+    <div class="cv-content">
+      <section class="cv-section" id="research-interests">
+        <h2>Research interests</h2>
+        <p><strong>Augmenting how we perceive the world.</strong></p>
+        {% for paragraph in site.data.atlas_cv.research_interests %}
+          <p>{{ paragraph }}</p>
+        {% endfor %}
+      </section>
+      {% assign section_ids = 'education,research,publications,service,skills,industry,teaching,honors,awards,scholarships' | split: ',' %}
+      {% assign section_names = 'Education,Research experience,Publications,Academic service,Skills,Startup experience,Teaching & leadership experience,Honors,Awards,Scholarships'
+        | split: ','
+      %}
+      {% for id in section_ids %}
+        {% if id == 'publications' %}
+          <section class="cv-section" id="cv-publications">
+            <h2>Publications</h2>
+            <p class="cv-publication-key">J=Journal, C=Conference, P=Poster, U=Under Review</p>
+            {% for publication in site.data.atlas_publications %}
+              <article class="cv-publication">
+                <span class="cv-publication-code">[{{ publication.code }}]</span>
+                <div>
+                  <p class="cv-publication-authors">{{ publication.cv_authors }}</p>
+                  <h3>
+                    <a href="{{ publication.permalink | relative_url }}">{{ publication.title }}</a>
+                  </h3>
+                  {% if publication.venue != '' %}
+                    <p class="cv-publication-venue">{{ publication.venue }}</p>
+                  {% endif %}
+                </div>
+              </article>
+            {% endfor %}
+          </section>
+        {% else %}
+          <section class="cv-section" id="{{ id }}">
+            <h2>{{ section_names[forloop.index0] }}</h2>
+            {% for entry in site.data.atlas_cv[id] %}
+              <article class="cv-entry{% if entry.source %} compact{% endif %}">
+                <div class="cv-entry-top">
+                  <div class="cv-entry-heading">
+                    <h3>
+                      {{- entry.title -}}
+                      {%- if entry.amount %} ({{ entry.amount }}){% endif -%}
+                      {%- if id == 'skills' %}:{% endif %}
+                    </h3>
+                    {% if entry.role %}
+                      <p class="cv-role">
+                        {{- entry.role -}}
+                        {%- if entry.collaboration %} | {{ entry.collaboration }}{% endif %}
+                      </p>
+                    {% endif %}
+                    {% if entry.source %}
+                      <p class="cv-source">{{ entry.source }}</p>
+                    {% endif %}
+                  </div>
+                  {% if entry.dates or entry.location %}
+                    <div class="cv-entry-meta">
+                      {% if entry.dates -%}
+                        <span class="cv-dates">{{ entry.dates }}</span>
+                      {%- endif %}
+                      {% if entry.location -%}
+                        <span class="cv-location">{{ entry.location }}</span>
+                      {%- endif %}
+                    </div>
+                  {% endif %}
+                </div>
+                {% if entry.detail %}
+                  <p>{{ entry.detail }}</p>
+                {% endif %}
+                {% if entry.bullets.size > 0 %}
+                  <ul>
+                    {% for bullet in entry.bullets %}
+                      <li>{{ bullet }}</li>
+                    {% endfor %}
+                  </ul>
+                {% endif %}
+              </article>
+            {% endfor %}
+          </section>
+        {% endif %}
+      {% endfor %}
+      <section class="cv-section" id="additional">
+        <h2>Additional information</h2>
+        <p><strong>Languages:</strong> {{ site.data.atlas_cv.additional.languages }}</p>
+        <p><strong>Interests:</strong> {{ site.data.atlas_cv.additional.interests }}</p>
+      </section>
+    </div>
+  </div>
+</div>

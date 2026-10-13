@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>Content editor · Nahyun Lee</title>
+    <link rel="icon" href="../assets/img/atlas-mark.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="admin.css" />
+    <script>
+      window.CMS_MANUAL_INIT = true;
+    </script>
+    <script src="settings.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/decap-cms@3.16.3/dist/decap-cms.js" defer></script>
+    <script src="editor.js" defer></script>
+  </head>
+  <body>
+    <main id="editor-setup">
+      <a href="../">← Nahyun Lee</a>
+      <h1>Content editor.</h1>
+      <p class="intro">뉴스, 블로그, 공지사항을 한곳에서 관리하세요.</p>
+      <div class="editor-sections">
+        <section>
+          <h2>News</h2>
+          <p>짧은 소식과 LinkedIn 게시물 링크. 홈페이지에는 최신 소식 한 개가 표시됩니다.</p>
+        </section>
+        <section>
+          <h2>Blog</h2>
+          <p>연구 과정의 외전. 본문, 이미지, 초안을 관리합니다.</p>
+        </section>
+        <section>
+          <h2>Announcements</h2>
+          <p>홈페이지 상단 공지와 강조 문구. 목록의 첫 번째 활성 공지가 표시됩니다.</p>
+        </section>
+      </div>
+      <div class="setup-notice" role="status" id="editor-status">
+        GitHub 로그인 연결 전입니다. 이 수정본에 포함된 CMS_SETUP.md의 일회성 설정을 마치면 편집 화면이 열립니다. 아직 변경사항을 저장할 수 없습니다.
+      </div>
+      <p>로그인 후 Publish를 누르면 변경사항이 저장되고 사이트가 다시 배포됩니다. GitHub 저장소에 쓰기 권한이 있는 계정만 편집할 수 있습니다.</p>
+    </main>
+  </body>
+</html>

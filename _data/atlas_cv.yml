@@ -1,0 +1,156 @@
+contact:
+  name: Nahyun Lee
+  phone: +1 (617) 388-8675
+  email: leadtheworld@g.skku.edu
+  location: Boston, MA, United States
+research_interests:
+  - My research investigates human perception and sensemaking, drawing on HCI, XR/haptics, and behavioral research.
+  - I aim to understand the cognitive and neural mechanisms underlying perception and decision-making, and translate these insights into systems that augment human
+    cognition.
+education:
+  - title: University of Massachusetts Boston
+    role: Exchange Student in Computer Science
+    dates: Sep 2026 – Jun 2027
+    location: Boston, MA, USA
+  - title: Sungkyunkwan University
+    role: B.S. in Mechanical Engineering, Software Engineering, and Human-Computer Interaction
+    dates: Feb 2023 – Expected Feb 2028
+    location: Suwon, South Korea
+    bullets:
+      - "GPA: 4.35/4.50"
+  - title: Hanyang University
+    role: Undergraduate Coursework in Business Administration
+    dates: Mar 2022 – Dec 2022
+    location: Seoul, South Korea
+research:
+  - title: Wearable and Interactive Technology Lab, KAIST
+    role: Research Intern | Advised by Prof. Ian Oakley
+    collaboration: Collaborated with Prof. Sangho Yoon (HCI Tech Lab, KAIST)
+    dates: Jan 2026 – Sep 2026
+    location: Daejeon, South Korea
+    bullets:
+      - Developed movement-coupled vibrotactile feedback using granular synthesis, exploring audiovisual-tactile illusions.
+      - Designed and conducted 2AFC and VR interaction studies, identifying task-dependent effects on haptic experience.
+  - title: Future Computing Lab, Sungkyunkwan University
+    role: Research Intern | Advised by Prof. Sunjae Lee
+    collaboration: Collaborated with Dr. Hyeon Jeon (Seoul National University)
+    dates: Sep 2025 – Sep 2026
+    location: Suwon, South Korea
+    bullets:
+      - Developed interactive systems to visualize missing evidence in investment decisions and support reflection on losses.
+      - Derived a five-stage loss-acceptance framework through formative interviews and evaluated a reflection system.
+  - title: Independent Research, Stanford Center at the Incheon Global Campus
+    role: Research Assistant | Advised by Hoseok Jung
+    collaboration: Collaborated with Imperial College London and TU Wien
+    dates: Mar 2024 – Dec 2025
+    location: Incheon, South Korea
+    bullets:
+      - Developed wearable and encountered-type thermal haptic interfaces for VR firefighting and Mars exploration training.
+      - Built a Fire Dynamics Simulator-Unity pipeline to translate fire conditions into spatially varying thermal feedback.
+service:
+  - title: Reviewer
+    bullets:
+      - ACM International Joint Conference on Pervasive and Ubiquitous Computing (Ubicomp 2026)
+      - ACM Conference on Human Factors in Computing Systems (CHI 2026)
+  - title: Student Volunteers
+    bullets:
+      - ACM Symposium on User Interface Software and Technology (UIST 2026)
+      - IEEE International Symposium on Mixed and Augmented Reality (ISMAR 2025)
+skills:
+  - title: Research Methods
+    detail: User Studies, Behavioral Experiments, Quantitative and Qualitative Analysis
+  - title: Software & AI Development
+    detail: Python, C/C++, MATLAB, React, Next.js, Flutter, LLM-based applications
+  - title: XR & Hardware Prototyping
+    detail: Unity (VR/AR), Haptic and Wearable Systems, Sensor Integration, Arduino, 3D printing
+industry:
+  - title: Modly
+    role: Co-Founder
+    dates: Feb 2025 – Jan 2026
+    location: Suwon, South Korea
+    bullets:
+      - Selected for the Korean I-Corps and completed technology commercialization training at George Washington University.
+      - Led business strategy for a 3D scanning service, conducting 100+ user interviews to identify viable applications.
+  - title: AiGENDA
+    role: AI Developer
+    dates: Jun 2024 – Aug 2024
+    location: Suwon, South Korea
+    bullets:
+      - Developed a lecture-based video Q&A system using speech-to-text (STT), LLMs, and LangChain.
+      - Improved domain-specific term recognition accuracy (60% → 98%) through retrieval-augmented transcript correction.
+teaching:
+  - title: Data Structures Tutor – International Student Tutoring Program
+    role: Sungkyunkwan University
+    dates: Sep 2025 – Dec 2025
+    location: Suwon, South Korea
+  - title: XR Systems & AI Integration Seminar Lead
+    role: Building Information Science & Technology Lab (BIST), Sungkyunkwan University
+    dates: Jul 2025 – Sep 2025
+    location: Suwon, South Korea
+    bullets:
+      - Led lab seminars on XR development (Unity, Meta Quest) and AI integration for architectural engineering applications.
+  - title: President – KingoSmartThings
+    role: AI/IoT Entrepreneurship Student Organization, Sungkyunkwan University
+    dates: Dec 2024 – Feb 2026
+    location: Suwon, South Korea
+    bullets:
+      - Led the organization to an Excellence Award in SKKU’s Excellent Study Club Program.
+      - Organized campus-wide hackathons (30+ participants) in collaboration with SKKU RISE Center and ICT College.
+honors:
+  - title: Associate Member – Sigma Xi, The Scientific Research Honor Society
+    source: Sigma Xi
+    dates: Sep 2026
+  - title: President’s List
+    source: Sungkyunkwan University
+    dates: Sep 2026
+  - title: University Representative – Young Engineers Honor Society (YEHS)
+    source: National Academy of Engineering of Korea
+    dates: Dec 2024
+awards:
+  - title: Gold Collar Engineering Student Award
+    source: Korean Society for Engineering Education
+    dates: Sep 2026
+  - title: President’s Award – URP III (Undergraduate Interdisciplinary Research Program)
+    source: Institute for Cross-disciplinary Studies, Sungkyunkwan University
+    dates: Dec 2025
+  - title: Korean I-Corps – Selected for U.S. Entrepreneurship Training
+    source: Ministry of Science and ICT & National Research Foundation of Korea
+    dates: Jun 2025
+  - title: Excellence Award – Embedded Software Competition (Open Innovation Track)
+    source: Ministry of Trade, Industry and Energy & Korea Electronics Technology Institute
+    dates: Nov 2024
+  - title: Engineering Innovation Award – Samsung Medical Service Design Program
+    source: Bio-Digital Healthcare Consortium, Sungkyunkwan University
+    dates: Jan 2024
+scholarships:
+  - title: Korea-U.S. Advanced Technology Youth Exchange Support Program
+    source: Korea Institute for Advancement of Technology
+    dates: Jun 2026 – Present
+    amount: ~$18,000
+  - title: Presidential Science Scholarship
+    source: Ministry of Science and ICT
+    dates: Jul 2025 – Present
+    amount: ~$18,500
+  - title: Cho Byung-Doo Scholarship
+    source: Cho Byung-Doo Scholarship Foundation
+    dates: Apr 2025 – Sep 2025
+    amount: ~$5,400
+  - title: Korea Entegris Scholarship
+    source: Entegris
+    dates: Sep 2024
+    amount: ~$2,300
+  - title: Hyeong-Ae Scholarship
+    source: Hyeong-Ae Scholarship Foundation
+    dates: Mar 2024 – Sep 2024
+    amount: ~$4,600
+  - title: Top 3% Academic Excellence Scholarship
+    source: Sungkyunkwan University
+    dates: Sep 2023 – Feb 2024
+    amount: ~$4,200
+  - title: Student Success Creativity Scholarship
+    source: Sungkyunkwan University
+    dates: May 2023
+    amount: ~$3,500
+additional:
+  languages: Korean (Native) and English (Full professional)
+  interests: Birdwatching and Financial Planning

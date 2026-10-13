@@ -1,0 +1,202 @@
+- id: facingloss
+  code: U.4
+  title: "FacingLoss: Facilitating Learning from Stock Investment Losses through Structured Reflection"
+  authors:
+    - Nahyun Lee
+    - Sunjae Lee
+    - Hyeon Jeon
+  year: null
+  status: Under review
+  venue: ""
+  url: ""
+  project: facingloss
+  summary: Helping investors turn interpretations of loss into learning for future decisions.
+  permalink: /publications/facingloss/
+  cv_authors: Nahyun Lee*, Sunjae Lee, and Hyeon Jeon.
+- id: feeling-the-heat
+  code: U.3
+  title: "Feeling the Heat: Embodied Multimodal Mixed Reality for Firefighter Sensemaking and Cognitive Load Management"
+  authors: &id001
+    - Sara Scheffer
+    - Elias Panner
+    - Nahyun Lee
+    - Hoseok Jung
+    - Wanting Mao
+    - Sebastian Lux
+    - Frank Long
+    - Arnab Majumdar
+    - Kurt Matyas
+  year: null
+  status: Under review
+  venue: ""
+  url: ""
+  project: firefighter
+  summary: Multimodal mixed reality for examining firefighter sensemaking and cognitive load.
+  permalink: /publications/feeling-the-heat/
+  cv_authors: Sara Scheffer*, Elias Panner, Nahyun Lee, Hoseok Jung, Wanting Mao, Sebastian Lux, Frank Long, Arnab Majumdar, and Kurt Matyas.
+- id: digital-twin
+  code: U.2
+  title: A VR-based digital twin framework for spatially grounded BIM-MEP HVAC operation and maintenance with role-separated LLM-agent services
+  authors:
+    - Min Htet Myint
+    - Nahyun Lee
+    - Sungmin Yoon
+  year: null
+  status: Under review
+  venue: ""
+  url: ""
+  project: digital-twin
+  summary: A spatial interface that connects a building digital twin with distinct LLM agent services.
+  permalink: /publications/digital-twin/
+  cv_authors: Min Htet Myint*, Nahyun Lee, Sungmin Yoon.
+- id: firefighter-training
+  code: U.1
+  title: "Embodied Multimodal Mixed Reality for Firefighter Training: Evaluating Visual-Thermal Integration for Situational Awareness and Decision Performance"
+  authors: *id001
+  year: null
+  status: Under review
+  venue: ""
+  url: ""
+  project: firefighter
+  summary: Evaluating visual and thermal integration for situational awareness and decisions in firefighter training.
+  permalink: /publications/firefighter-training/
+  cv_authors: Sara Scheffer*, Elias Panner, Nahyun Lee, Hoseok Jung, Wanting Mao, Sebastian Lux, Frank Long, Arnab Majumdar, and Kurt Matyas.
+- id: fire-dynamics
+  code: P.2
+  title: Fire Dynamics Data-Driven Thermal Haptics for VR Fire Simulation
+  authors:
+    - Hoseok Jung
+    - Jiyoon Lee
+    - Nahyun Lee
+    - Hyunmin Kang
+  year: 2026
+  status: Poster
+  venue: The 32nd ACM Symposium on Virtual Reality Software and Technology (VRST 2026 Posters)
+  url: ""
+  project: fire-dynamics
+  summary: Connecting fire simulation data to thermal feedback in virtual reality.
+  permalink: /publications/fire-dynamics/
+  cv_authors: Hoseok Jung*, Jiyoon Lee, Nahyun Lee, and Hyunmin Kang.
+- id: thermal-kinesthetic
+  code: C.6
+  title: A Wearable Encountered-Type ThermalKinesthetic Interface for Mars Exploration VR
+  authors:
+    - Hoseok Jung
+    - Jiyoon Lee
+    - Sungmo Lee
+    - Nahyun Lee
+    - Seungwon Hu
+    - Boyoung Kim
+    - Okkeun Lee
+    - Hyochang Kim
+    - Hyunmin Kang
+  year: 2026
+  status: Conference
+  venue: 28th International Conference on Human-Computer Interaction (HCII 2026 Invited Papers)
+  url: https://drive.google.com/file/d/1K0fLNkUL5P3_ADU_jc6VGVJXPEIfHbav/view?usp=sharing
+  project: mars
+  summary: Wearable force and thermal feedback for a Mars exploration experience.
+  permalink: /publications/thermal-kinesthetic/
+  cv_authors: Hoseok Jung*, Jiyoon Lee, Sungmo Lee, Nahyun Lee, Seungwon Hu, Boyoung Kim, Okkeun Lee, Hyochang Kim, and Hyunmin Kang (2026).
+- id: missing-evidence
+  code: P.1
+  title: Is This Enough to Decide? Facilitating Informed Investment Decisions by Visualizing Missing Evidence
+  authors:
+    - Nahyun Lee
+    - Hyeon Jeon
+  year: 2026
+  status: Poster
+  venue: ACM Conference on Human Factors in Computing Systems Extended Abstracts (CHI 2026 Extended Abstract)
+  url: https://dl.acm.org/doi/10.1145/3772363.3798348
+  project: evidence
+  summary: Helping investors notice the information they have not considered.
+  permalink: /publications/missing-evidence/
+  cv_authors: Nahyun Lee* and Hyeon Jeon (2026).
+- id: imu-testbed
+  code: C.5
+  title: A Low-Cost Quantitative Evaluation Testbed of Small-Sized IMU Sensor Modules Using a Smartphone
+  authors:
+    - Myeongjun Kim
+    - Seungmin Lee
+    - Junjae Park
+    - Nahyun Lee
+    - Jo Woon Chong
+  year: 2025
+  status: Conference
+  venue: 10th International Conference on Consumer Electronics Asia (ICCE-Asia 2025)
+  url: https://doi.org/10.1109/ICCE-Asia67487.2025.11263659
+  project: imu
+  summary: An accessible testbed for quantitatively evaluating small IMU sensor modules.
+  permalink: /publications/imu-testbed/
+  cv_authors: Myeongjun Kim*, Seungmin Lee*, Junjae Park*, Nahyun Lee*, and Jo Woon Chong (2025).
+- id: wrist-robot
+  code: C.4
+  title: Encounter-type Force and Thermal Haptics for VR with a Wrist-Worn Articulated Robot
+  authors:
+    - Hoseok Jung
+    - Jiyoon Lee
+    - Sungmo Lee
+    - Nahyun Lee
+  year: 2025
+  status: Conference
+  venue: Korea Society of Design Science, 2025 Fall International Conference (KSDS 2025)
+  url: https://drive.google.com/file/d/1yoyJU1LjHRHGD1-N1rbqk7OEXYUo_oSP/view?usp=sharing
+  project: mars
+  summary: Combining force and thermal feedback in a wrist-worn robot.
+  permalink: /publications/wrist-robot/
+  cv_authors: Hoseok Jung*, Jiyoon Lee, Sungmo Lee, and Nahyun Lee (2025).
+- id: mars-simulation
+  code: C.3
+  title: Mars Exploration Simulation with an Encounter-type Multimodal Haptic Device
+  authors:
+    - Hoseok Jung
+    - Dongho Shin
+    - Nahyun Lee
+    - Minseo Yu
+    - Kyuhyoung Cho
+    - Gyungsun Go
+  year: 2024
+  status: Conference
+  venue: Korea Society of Design Science, 2024 Spring International Conference (KSDS 2024)
+  url: https://drive.google.com/file/d/1zjGj4kk3McYDg_vCrK2quewDhJfdiepE/view?usp=sharing
+  project: mars
+  summary: A multimodal haptic device for experiencing a simulated Mars environment.
+  permalink: /publications/mars-simulation/
+  cv_authors: Hoseok Jung*, Dongho Shin*, Nahyun Lee*, Minseo Yu*, Kyuhyoung Cho*, and Gyungsun Go* (2024).
+- id: mars-exhibit
+  code: C.2
+  title: Proposal for a Virtual Reality Mars Exploration Exhibit Utilizing Reverse-Temperature Multi-Modal Haptic Devices for Popularizing Space Science
+  authors:
+    - Jiyoon Lee
+    - Jiwon Yang
+    - ChungHyun Lee
+    - Nahyun Lee
+    - Hyunmin Kang
+    - Hoseok Jung
+  year: 2024
+  status: Conference
+  venue: International Symposium of Science Museums 2024 (ISSM 2024)
+  url: https://drive.google.com/file/d/1SX4-jVj6fr4wUiJLEctQZUohqBl0DL4S/view?usp=sharing
+  project: mars
+  summary: A proposal for an embodied virtual reality science exhibit.
+  permalink: /publications/mars-exhibit/
+  cv_authors: Jiyoon Lee*, Jiwon Yang, ChungHyun Lee, Nahyun Lee, Hyunmin Kang, and Hoseok Jung (2024).
+- id: workplace-ai
+  code: C.1
+  title: LLM-based chatbot system to improve worker efficiency and prevent safety incidents
+  authors:
+    - Doohwan Kim
+    - Yohan Han
+    - Inhyuk Jeong
+    - Yeongseok Hwang
+    - Jinju Park
+    - Nahyun Lee
+    - Yujin Lee
+  year: 2024
+  status: Conference
+  venue: Korea Society of Computer Information, 2024 Winter Conference (KSCI 2024)
+  url: https://drive.google.com/file/d/1TO1dzl6OCrHRFgJfs6kxyCgHtke4tx3b/view?usp=sharing
+  project: workplace-ai
+  summary: An LLM chatbot focused on access to workplace information and safety support.
+  permalink: /publications/workplace-ai/
+  cv_authors: Doohwan Kim*, Yohan Han, Inhyuk Jeong, Yeongseok Hwang, Jinju Park, Nahyun Lee, and Yujin Lee (2024).

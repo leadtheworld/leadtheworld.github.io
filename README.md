@@ -1,3 +1,10 @@
+# Nahyun Lee — Research Atlas
+
+수정 내용과 실행 방법은 [REDESIGN_GUIDE.md](REDESIGN_GUIDE.md)를 참고하세요.
+ZIP의 압축을 모두 푼 뒤 `OPEN_PREVIEW.html`을 열면 네 페이지를 미리 볼 수 있습니다.
+
+---
+
 # al-folio
 
 <div align="center">

@@ -1,0 +1,46 @@
+items:
+  - datetime: 2026-09
+    date: Sep 2026
+    title: A new chapter in Boston
+    short_title: Exchange at UMass Boston.
+    description: Beginning my exchange at the University of Massachusetts Boston.
+    url: /cv/#education
+    published: true
+    linkedin_url: ""
+  - datetime: 2026-06
+    date: Jun 2026
+    title: An award for sharing my undergraduate journey
+    description: Received an award in SKKU’s Undergraduate Student Success Story Contest.
+    url: /cv/#awards
+    published: true
+    linkedin_url: ""
+  - datetime: "2026-02-20"
+    date: Feb 20, 2026
+    title: My first CHI poster
+    description: “Is This Enough to Decide?” was accepted to CHI 2026.
+    url: /publications/missing-evidence/
+    published: true
+    linkedin_url: ""
+  - datetime: 2026-01
+    date: Jan 2026
+    title: Joining KAIST’s WIT Lab
+    description: Starting a research internship on audio sensing and multimodal haptic interaction.
+    url: /cv/#research
+    published: true
+    linkedin_url: ""
+  - datetime: 2025-07
+    date: Jul 2025
+    title: Presidential Science Scholarship
+    description: Selected for the Presidential Science Scholarship.
+    url: /cv/#scholarships
+    published: true
+    linkedin_url: ""
+  - datetime: 2026-09
+    date: Sep 2026
+    title: Gold Collar Engineering Student Award
+    short_title: Gold Collar Engineering Student Award.
+    description: Received the Gold Collar Engineering Student Award from the Korean Society for Engineering Education.
+      This September, I was also named to SKKU’s President’s List and became an Associate Member of Sigma Xi.
+    url: /cv/#awards
+    published: true
+    linkedin_url: ""

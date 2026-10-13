@@ -1,0 +1,25 @@
+---
+layout: atlas
+---
+<article class="page-width inner-page post-page blog-post">
+  <a class="back-link" href="{{ '/blog/' | relative_url }}">← All stories</a>
+  <header class="post-title">
+    {% if page.topic %}
+      <p class="eyebrow">{{ page.topic }}</p>
+    {% endif %}
+    <h1>{{ page.title }}</h1>
+    <p class="post-deck">{{ page.description }}</p>
+    <div class="post-meta">Nahyun Lee <span>·</span> {{ page.date | date: '%B %d, %Y' }}</div>
+  </header>
+  <div class="post-body">{{ content }}</div>
+  {% if page.project_id %}
+    {% assign project = site.data.atlas.projects | where: 'id', page.project_id | first %}
+    {% if project %}
+      <section class="post-related">
+        <h2>The related research</h2>
+        <a href="{{ project.detail_url | relative_url }}">{{ project.title }} ↗</a>
+      </section>
+    {% endif %}
+  {% endif %}
+  <div class="post-ending"><a class="text-link" href="{{ '/blog/' | relative_url }}">Back to the blog ↗</a></div>
+</article>

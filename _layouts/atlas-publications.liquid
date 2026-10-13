@@ -1,0 +1,109 @@
+---
+layout: atlas
+---
+{% assign total_works = site.data.atlas_publications | size %}
+{% assign review_works = site.data.atlas_publications | where: 'status', 'Under review' | size %}
+<div class="page-width inner-page">
+  <header class="page-title">
+    <h1>Publications<span class="title-dot">.</span></h1>
+    <p>Work on sensory feedback, perceptual cues, and human interpretation.</p>
+  </header>
+  <section class="selected-section publication-selected" aria-labelledby="selected-title">
+    <div class="section-heading">
+      <div>
+        <h2 id="selected-title">Selected work</h2>
+      </div>
+    </div>
+    <div class="selected-grid">
+      <a class="selected-card work-reflection" href="{{ '/publications/facingloss/' | relative_url }}">
+        <div class="work-art" aria-hidden="true">
+          <span class="reflect-circle"></span><span class="reflect-circle"></span><span class="reflect-circle"></span>
+        </div>
+        <div class="selected-copy">
+          <p class="eyebrow">REFLECTION · UNDER REVIEW</p>
+          <h3>FacingLoss</h3>
+          <p>How can reflecting on an investment loss support learning for future decisions?</p>
+          <span class="card-arrow" aria-hidden="true">↗</span>
+        </div>
+      </a>
+      <a class="selected-card work-touch" href="{{ '/research/feelsound/' | relative_url }}">
+        <div class="work-art" aria-hidden="true">
+          <span class="wave-line"></span><span class="wave-line"></span><span class="wave-line"></span><span class="wave-line"></span>
+        </div>
+        <div class="selected-copy">
+          <p class="eyebrow">MULTIMODAL HAPTICS · RESEARCH PROJECT</p>
+          <h3>FeelSound</h3>
+          <p>Can short signal fragments support convincing virtual touch?</p>
+          <span class="card-arrow" aria-hidden="true">↗</span>
+        </div>
+      </a>
+      <a class="selected-card work-evidence" href="{{ '/publications/missing-evidence/' | relative_url }}">
+        <div class="work-art" aria-hidden="true">
+          <span class="evidence-cell"></span><span class="evidence-cell"></span><span class="evidence-cell"></span
+          ><span class="evidence-cell missing-cell">?</span>
+        </div>
+        <div class="selected-copy">
+          <p class="eyebrow">DECISION SUPPORT · CHI 2026 POSTER</p>
+          <h3>Is This Enough to Decide?</h3>
+          <p>Making missing evidence visible before an investment decision.</p>
+          <span class="card-arrow" aria-hidden="true">↗</span>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <h2 id="all-publications" class="all-publications-title">All publications</h2>
+  <div class="publication-toolbar">
+    <div class="filter-buttons" aria-label="Filter publications">
+      <button type="button" data-pub-filter="all" aria-pressed="true">
+        All <span>{{ total_works }}</span></button
+      ><button type="button" data-pub-filter="published" aria-pressed="false">
+        Published <span>{{ total_works | minus: review_works }}</span></button
+      ><button type="button" data-pub-filter="review" aria-pressed="false">
+        Under review <span>{{ review_works }}</span>
+      </button>
+    </div>
+    <label class="search-field"
+      ><span class="sr-only">Search publications</span><input type="search" id="publication-search" placeholder="Search title, author, or topic…"
+    ></label>
+  </div>
+  <p id="publication-count" class="result-count" aria-live="polite">{{ total_works }} works</p>
+  <div class="publication-list">
+    {% for pub in site.data.atlas_publications %}
+      <article class="publication-entry" id="{{ pub.id }}" data-status="{% if pub.status == 'Under review' %}review{% else %}published{% endif %}">
+        <div class="publication-index">
+          <span>{{ pub.code }}</span><span>{{ pub.year | default: 'In review' }}</span>
+        </div>
+        <div class="publication-main">
+          <p class="eyebrow">{{ pub.status }}</p>
+          <h3>
+            <a href="{{ pub.permalink | relative_url }}">{{ pub.title }}</a>
+          </h3>
+          <p class="publication-authors">
+            {% for author in pub.authors -%}
+              {%- if author == 'Nahyun Lee' -%}
+                <strong>{{ author }}</strong>
+              {%- else -%}
+                {{- author -}}
+              {%- endif -%}
+              {%- unless forloop.last %}, {% endunless -%}
+            {%- endfor %}
+          </p>
+          {% if pub.venue != '' %}
+            <p class="publication-venue">{{ pub.venue }}</p>
+          {% endif %}
+          <p class="publication-summary">{{ pub.summary }}</p>
+          <div class="inline-links">
+            {% if pub.url != '' -%}
+              <a class="text-link" href="{{ pub.url }}" target="_blank" rel="noopener noreferrer">
+                {%- if pub.url contains 'drive.google.com' %}Manuscript{% else %}Paper{% endif %} ↗</a
+              >
+            {%- endif -%}
+            <a class="text-link" href="{{ pub.permalink | relative_url }}">Read research ↗</a>
+          </div>
+        </div>
+      </article>
+    {% endfor %}
+  </div>
+  <p id="publication-empty" class="empty-message" hidden>No works match this search. Try another term or choose All.</p>
+</div>

@@ -1,0 +1,64 @@
+@font-face {
+  font-family: K2D;
+  src: url("../assets/fonts/k2d/K2D-Regular.ttf") format("truetype");
+  font-display: swap;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background: #f5f1e7;
+  color: #5d6a45;
+  font-family: K2D, sans-serif;
+}
+#editor-setup {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 64px 28px;
+  font-size: 17px;
+  line-height: 1.75;
+}
+#editor-setup a {
+  color: inherit;
+}
+#editor-setup h1 {
+  font:
+    normal clamp(40px, 6vw, 68px)/1.1 Georgia,
+    serif;
+  letter-spacing: -0.04em;
+  margin: 48px 0 20px;
+}
+#editor-setup h2 {
+  font-size: 22px;
+  margin: 0 0 12px;
+}
+#editor-setup p {
+  margin: 0 0 22px;
+}
+.editor-sections {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 28px;
+  margin: 38px 0;
+}
+.editor-sections section {
+  border-top: 1px solid #c9d0c1;
+  padding-top: 20px;
+}
+.setup-notice {
+  border: 1px solid #5d6a45;
+  border-radius: 8px;
+  padding: 22px;
+  margin-bottom: 24px;
+  background: #e6eadc;
+}
+@media (max-width: 700px) {
+  .editor-sections {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  #editor-setup {
+    padding-top: 32px;
+  }
+}

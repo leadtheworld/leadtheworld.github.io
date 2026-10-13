@@ -1,0 +1,11 @@
+name = "nahyun-cms-auth"
+main = "worker.mjs"
+compatibility_date = "2026-10-01"
+
+[vars]
+SITE_ORIGIN = "https://nahyunlee.com"
+REPOSITORY = "leadtheworld/leadtheworld.github.io"
+ALLOWED_LOGIN = "leadtheworld"
+
+# Set CLIENT_ID and CLIENT_SECRET with `wrangler secret put`.
+# No credentials belong in this file or in admin/settings.js.
